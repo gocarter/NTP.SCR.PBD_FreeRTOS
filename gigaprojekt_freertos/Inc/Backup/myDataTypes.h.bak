@@ -1,0 +1,11 @@
+typedef volatile struct {
+	uint16_t cycle;
+	uint16_t pgmDataSize;
+	uint8_t globalVarNumber;
+	uint8_t globalVarTab[128][3];
+	uint8_t outVarTab[20];
+	uint8_t inVarTab[5];
+	uint16_t pgmCodeSize;
+	uint32_t CRC32pgmCode;
+	uint32_t CRC32VarTab;
+}AsmVmConfig;
